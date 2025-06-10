@@ -11,7 +11,7 @@ export async function POST(request: NextRequest) {
     // check if all fields are filled
     if (!firstName || !lastName || !email || !password || !confirmPassword) {
       return NextResponse.json(
-        { message: "All fields are required" },
+        { message: "All fields are required." },
         { status: 400 }
       );
     }
@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
     // check if passwords match
     if (password !== confirmPassword) {
       return NextResponse.json(
-        { message: "Passwords do not match" },
+        { message: "Passwords do not match." },
         { status: 400 }
       );
     }
@@ -31,7 +31,7 @@ export async function POST(request: NextRequest) {
     const existingEmail = await User.findOne({ email: trimmedEmail });
     if (existingEmail) {
       return NextResponse.json(
-        { message: "Email already exists" },
+        { message: "The email has already been taken." },
         { status: 400 }
       );
     }
@@ -46,7 +46,7 @@ export async function POST(request: NextRequest) {
     });
     return NextResponse.json(
       {
-        message: "User created successfully",
+        message: "User created successfully.",
         newUser,
       },
       { status: 201 }
