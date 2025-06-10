@@ -44,7 +44,7 @@ export default function LoginPage() {
       {/* right */}
       <div className="flex items-center justify-center p-6">
         <div className="w-sm max-w-md">
-          <h1 className="text-4xl font-extrabold mb-6">Welcome back!</h1>
+          <h1 className="text-4xl font-extrabold mb-6">Let's get cooking!</h1>
 
           <form onSubmit={doLogin} className="space-y-4 text-gray-700">
             <div>
