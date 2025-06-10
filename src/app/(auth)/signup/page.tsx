@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import Image from "next/image";
+import logo from "@/../public/img/logo.png";
 import cookingImage from "@/../public/img/cooking-stock.jpg";
 
 export default function LoginPage() {
@@ -53,7 +54,6 @@ export default function LoginPage() {
       <div className="flex items-center justify-center p-6">
         <div className="w-sm max-w-md">
           <h1 className="text-4xl font-bold mb-6">Welcome!</h1>
-
           <form onSubmit={doSignup} className="space-y-4 text-gray-700">
             <div className="flex flex-row w-full gap-x-3">
               <div className="flex-1">
@@ -65,7 +65,7 @@ export default function LoginPage() {
                   type="text"
                   value={firstName}
                   onChange={(e) => setFirstName(e.target.value)}
-                  className="w-full border py-1.5 rounded border-gray-400 focus:outline-none focus:border-green-600 focus:ring-2 focus:ring-green-600"
+                  className="w-full border py-1.5 px-3 rounded border-gray-400 focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
                 />
               </div>
 
@@ -78,7 +78,7 @@ export default function LoginPage() {
                   type="text"
                   value={lastName}
                   onChange={(e) => setLastName(e.target.value)}
-                  className="w-full border py-1.5 rounded border-gray-400 focus:outline-none focus:border-green-600 focus:ring-2 focus:ring-green-600"
+                  className="w-full border py-1.5 px-3 rounded border-gray-400 focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
                 />
               </div>
             </div>
@@ -92,7 +92,7 @@ export default function LoginPage() {
                 type="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
-                className="w-full border py-1.5 rounded border-gray-400 focus:outline-none focus:border-green-600 focus:ring-2 focus:ring-green-600"
+                className="w-full border py-1.5 px-3 rounded border-gray-400 focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
               />
             </div>
 
@@ -105,7 +105,7 @@ export default function LoginPage() {
                 type="password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
-                className="w-full border py-1.5 rounded border-gray-400 focus:outline-none focus:border-green-600 focus:ring-2 focus:ring-green-600"
+                className="w-full border py-1.5 px-3 rounded border-gray-400 focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-600"
               />
             </div>
 
@@ -121,7 +121,7 @@ export default function LoginPage() {
                 type="password"
                 value={confirmPassword}
                 onChange={(e) => setConfirmPassword(e.target.value)}
-                className="w-full border py-1.5 rounded border-gray-400 focus:outline-none focus:border-green-600 focus:ring-2 focus:ring-green-500"
+                className="w-full border py-1.5 px-3 rounded border-gray-400 focus:outline-none focus:border-green-600 focus:ring-1 focus:ring-green-500"
               />
             </div>
 
