@@ -53,7 +53,7 @@ export default function LoginPage() {
       {/* right */}
       <div className="flex items-center justify-center p-6">
         <div className="w-sm max-w-md">
-          <h1 className="text-4xl font-bold mb-6">Welcome!</h1>
+          <h1 className="text-4xl font-extrabold mb-6">Welcome!</h1>
           <form onSubmit={doSignup} className="space-y-4 text-gray-700">
             <div className="flex flex-row w-full gap-x-3">
               <div className="flex-1">
