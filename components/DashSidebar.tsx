@@ -55,7 +55,7 @@ export function SidebarDemo() {
     <div
       className={cn(
         "flex w-full flex-1 flex-col overflow-hidden rounded-md border border-neutral-200 bg-gray-100 md:flex-row",
-        "h-[70vh]"
+        "h-[80vh]"
       )}
     >
       <Sidebar open={open} setOpen={setOpen} animate={false}>
