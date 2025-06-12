@@ -25,22 +25,22 @@ interface PageConfig {
 const pages: PageConfig[] = [
   {
     label: "Sessions",
-    icon: <IconChefHat className="h-5 w-5 text-neutral-700" />,
+    icon: <IconChefHat className="h-6 w-6 text-neutral-700" />,
     component: <SessionsPage />,
   },
   {
-    label: "My Recipes",
-    icon: <IconNotebook className="h-5 w-5 text-neutral-700" />,
+    label: "Recipes",
+    icon: <IconNotebook className="h-6 w-6 text-neutral-700" />,
     component: <RecipesPage />,
   },
   {
     label: "Import & Scan",
-    icon: <IconTextScan2 className="h-5 w-5 text-neutral-700" />,
+    icon: <IconTextScan2 className="h-6 w-6 text-neutral-700" />,
     component: <ImportScanPage />,
   },
   {
     label: "Profile",
-    icon: <IconUserCircle className="h-5 w-5 text-neutral-700" />,
+    icon: <IconUserCircle className="h-6 w-6 text-neutral-700" />,
     component: <ProfilePage />,
   },
 ];
@@ -55,7 +55,7 @@ export function SidebarDemo() {
     <div
       className={cn(
         "flex w-full flex-1 flex-col overflow-hidden rounded-md border border-neutral-200 bg-gray-100 md:flex-row",
-        "h-[80vh]"
+        "h-[70vh]"
       )}
     >
       <Sidebar open={open} setOpen={setOpen} animate={false}>
@@ -72,7 +72,7 @@ export function SidebarDemo() {
                   )}
                 >
                   {icon}
-                  <span className="text-neutral-700 text-sm">{label}</span>
+                  <span className="text-neutral-700">{label}</span>
                 </button>
               ))}
             </div>
