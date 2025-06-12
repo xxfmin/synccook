@@ -28,6 +28,7 @@ const CookSessionSchema = new Schema(
     aggregatedIngredients: [AggregatedIngredientSchema],
     combinedTimeline: [CombinedStepSchema],
     startTime: { type: Date, default: () => new Date() },
+    duration: { type: Number, required: true },
   },
   { timestamps: true }
 );
